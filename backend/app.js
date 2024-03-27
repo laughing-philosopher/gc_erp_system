@@ -40,6 +40,7 @@ app.use(
       "http://localhost:3000",
       "http://127.0.0.1:8000",
       "https://ayush1108g.github.io",
+      ""
     ],
     origin: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
@@ -61,7 +62,7 @@ app.use(mongoSanitize());
 app.use(xss());
 app.use(hpp());
 
-const backendUrl = "https://gc-erp-system.onrender.com";
+const backendUrl = "https://gc-erp-system-xn5a.onrender.com/";
 cron.schedule("*/180 * * * * *", async function () {
   console.log("Restarting server");
 
